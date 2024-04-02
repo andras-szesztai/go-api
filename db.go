@@ -63,6 +63,8 @@ func (storage *MySQLStorage) createUsersTable() error {
 		id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 		email VARCHAR(100) NOT NULL,
 		password VARCHAR(100) NOT NULL,
+		firstName VARCHAR(100) NOT NULL,
+		lastName VARCHAR(100) NOT NULL,
 		createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
 		PRIMARY KEY (id)
