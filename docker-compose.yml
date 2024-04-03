@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    build:
+      context: ./db
+    ports:
+        - "3306:3306"
+
+  # api:
+  #   build: .
+  #   ports:
+  #       - "8080:8080"
+  #   depends_on:
+  #       - db
+
+
